@@ -1,0 +1,99 @@
+/* Gradient Background for the entire body */
+body {
+    background: linear-gradient(to right, #E0F2F1, #a3e9ee); /* Gradient effect */
+    font-family: 'Arial', sans-serif; /* Set a default font */
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+/* Container for the registration form */
+.container {
+    max-width: 400px; /* Limit the width of the form */
+    width: 100%; /* Ensure it is responsive */
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Title styling */
+.title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Content area */
+.content {
+    width: 100%;
+}
+
+/* Styling for input boxes */
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px; /* Ensure padding is uniform */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+/* Focus effect on input */
+.input-box input:focus {
+    border-color: #5ab9d6;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(56, 169, 189, 0.5);
+}
+
+/* Button styling */
+.button input {
+    width: 100%;
+    padding: 12px;
+    background-color: #0a6470; /* Primary color */
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animation for hover */
+}
+
+.button input:hover {
+    background-color: #3390ce; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Ensure it is responsive */
+    }
+
+    .title {
+        font-size: 1.5rem; /* Adjust title size */
+    }
+
+    .button input {
+        font-size: 1rem; /* Adjust button size */
+    }
+}

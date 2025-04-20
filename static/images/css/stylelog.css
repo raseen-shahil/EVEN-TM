@@ -1,0 +1,86 @@
+/* Basic Reset */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #E0F2F1, #a3e9ee); /* Gradient effect */
+    font-family: 'Arial', sans-serif; /* Set a default font */
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+/* Container and other styles... */
+
+
+.container {
+    width: 400px; /* Set width of the login container */
+    background-color: #ffffff; /* White background for the container */
+    padding: 30px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.title {
+    font-size: 24px; /* Title font size */
+    font-weight: 500; /* Medium weight for the title */
+    text-align: center; /* Center align the title */
+    margin-bottom: 20px; /* Margin below the title */
+}
+
+.user_details {
+    margin-bottom: 20px; /* Margin below the user details section */
+}
+
+.input-box {
+    margin-bottom: 15px; /* Margin below each input box */
+}
+
+.input-box label {
+    display: block; /* Make label a block element */
+    margin-bottom: 5px; /* Space between label and input */
+    font-size: 14px; /* Label font size */
+    color: #333; /* Dark color for the label */
+}
+
+.input-box input[type="text"],
+.input-box input[type="password"] {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size for input text */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.input-box input[type="text"]:focus,
+.input-box input[type="password"]:focus {
+    border-color: #5ab9d6; /* Change this to match the focus color */
+    outline: none; /* Remove outline */
+}
+
+.button {
+    text-align: center; /* Center align the button */
+}
+
+.button input[type="submit"] {
+    background-color: #0a6470; /* Primary color for submit button */
+    color: #ffffff; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners for button */
+    font-size: 16px; /* Font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background and transform */
+}
+
+.button input[type="submit"]:hover {
+    background-color: #3390ce; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}

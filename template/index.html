@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<div id="myCarousel" class="carousel slide" data-ride="false" data-interval="false"> <!-- Disable automatic sliding -->
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    </ol>
+
+    <style>
+      /* Reset default body margin and padding */
+      body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          overflow: hidden; /* Prevent scrolling */
+      }
+
+      /* Make sure the carousel occupies full screen */
+      .carousel-inner {
+          height: 100vh; /* Full height of the viewport */
+          width: 100vw;  /* Full width of the viewport */
+      }
+
+      /* Ensure the image covers the entire area */
+      .carousel-inner .item img {
+          width: 100%;    /* Full width of the viewport */
+          height: 100%;   /* Full height of the viewport */
+          object-fit: cover; /* Cover the area without distorting the image */
+          object-position: center; /* Center the image in case of cropping */
+      }
+
+      /* Reset padding and margins to remove any white space */
+      .carousel, .carousel-inner, .item {
+          padding: 0;
+          margin: 0;
+      }
+
+      /* Hide carousel control buttons */
+      .carousel-control {
+          display: none; /* Remove navigation arrows */
+      }
+    </style>
+
+    <!-- Wrapper for the single slide -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="{% static 'images/home1.jpg' %}" alt="Image 1">
+      </div>
+    </div>
+
+</div>
+
+{% endblock %}
